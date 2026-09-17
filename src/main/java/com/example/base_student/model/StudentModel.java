@@ -1,6 +1,6 @@
-package com.base_alumno.model;
+package com.example.base_student.model;
 
-import com.base_alumno.dto.StudentDto;
+import com.example.base_student.dto.StudentDto;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -51,4 +51,3 @@ public class StudentModel {
     }
 
 }
-

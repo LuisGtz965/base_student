@@ -1,6 +1,6 @@
-package com.base_alumno.dto;
+package com.example.base_student.dto;
 
-import com.base_alumno.model.StudentModel;
+import com.example.base_student.model.StudentModel;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import lombok.AllArgsConstructor;

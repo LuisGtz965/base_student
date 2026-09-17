@@ -1,4 +1,4 @@
-package com.base_alumno.controller;
+package com.example.base_student.controller;
 
 import java.util.List;
 
@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.base_alumno.dto.StudentDto;
-import com.base_alumno.service.StudentService;
+import com.example.base_student.dto.StudentDto;
+import com.example.base_student.service.StudentService;
 
 
 @RestController
@@ -27,4 +27,3 @@ public class StudentController {
         return new ResponseEntity<>(students, HttpStatus.OK);
     }
 }
-

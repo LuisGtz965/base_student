@@ -1,11 +1,11 @@
-package com.base_alumno.service;
+package com.example.base_student.service;
 
 import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import com.base_alumno.dto.StudentDto;
-import com.base_alumno.repository.StudentRepository;
+import com.example.base_student.dto.StudentDto;
+import com.example.base_student.repository.StudentRepository;
 
 @Service 
 public class StudentService {
