@@ -157,9 +157,12 @@ base_student/
     │   ├── java/
     │   │   ├── com/example/base_student/
     │   │   │   └── BaseStudentApplication.java
-    │   │   └── com/base_alumno/
+    │   │   └── com/example/base_student/
     │   │       ├── dto/StudentDto.java
-    │   │       └── model/StudentModel.java
+    │   │       ├── model/StudentModel.java
+    │   │       ├── repository/StudentRepository.java
+    │   │       ├── service/StudentService.java
+    │   │       └── controller/StudentController.java
     │   └── resources/
     │       ├── application.properties
     │       └── application-dev.properties
@@ -181,13 +184,7 @@ Para completar la funcionalidad se recomienda agregar:
 
 ## Consideraciones de paquetes
 
-La clase principal esta en `com.example.base_student`, mientras que la entidad y el DTO estan en `com.base_alumno`. Spring Boot escanea por defecto el paquete de la clase principal y sus subpaquetes, por lo que `com.base_alumno` no queda incluido automaticamente.
-
-Antes de registrar repositorios o servicios en `com.base_alumno`, se debe elegir una de estas alternativas:
-
-- Mover los paquetes de dominio debajo de `com.example.base_student`.
-- Configurar explicitamente el escaneo con `@EntityScan` y `@EnableJpaRepositories`.
-- Ampliar el escaneo de componentes con `@ComponentScan` cuando sea necesario.
+Todos los componentes de la aplicacion estan bajo `com.example.base_student`, por lo que Spring Boot los detecta automaticamente mediante el escaneo del paquete principal.
 
 ## Pruebas
 
